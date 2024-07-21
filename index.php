@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Nota App</h1>
-        <form action="generate_pdf.php" method="get">
+        <form action="generate_pdf.php" method="GET">
             <table>
                 <thead>
                     <tr>
