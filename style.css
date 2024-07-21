@@ -1,0 +1,119 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Menghilangkan scroll horizontal */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Mengatur lebar tabel tetap */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Mencegah teks wrap ke baris baru */
+    overflow: hidden; /* Mengatur overflow jika teks terlalu panjang */
+    text-overflow: ellipsis; /* Menampilkan elipsis jika teks terlalu panjang */
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"] {
+    background-color: #008CBA;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+button:hover {
+    opacity: 0.8;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+}
