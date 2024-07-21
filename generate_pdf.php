@@ -2,9 +2,9 @@
 require_once('tcpdf/tcpdf.php');
 
 // Data dari form
-$nama_barang = $_POST['nama_barang'];
-$satuan = $_POST['satuan'];
-$jumlah = $_POST['jumlah'];
+$nama_barang = $_GET['nama_barang'];
+$satuan = $_GET['satuan'];
+$jumlah = $_GET['jumlah'];
 
 // Buat objek TCPDF
 $pdf = new TCPDF('P', 'mm', array(176, 250), true, 'UTF-8', false);
